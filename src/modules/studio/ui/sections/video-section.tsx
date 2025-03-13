@@ -43,9 +43,9 @@ export const VideosSectionSuspense = () => {
               <TableHead>Visiblity</TableHead>
               <TableHead>Status</TableHead>
               <TableHead>Date</TableHead>
-              <TableHead className="text-right">Views</TableHead>
-              <TableHead className="text-right">Comments</TableHead>
-              <TableHead className="text-right pr-6">Likes</TableHead>
+              <TableHead>Views</TableHead>
+              <TableHead>Comments</TableHead>
+              <TableHead className="pr-6">Likes</TableHead>
             </TableRow>
           </TableHeader>
           <TableBody>
