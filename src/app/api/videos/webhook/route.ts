@@ -98,8 +98,8 @@ export const POST = async (request: Request) => {
         });
       }
 
-      const { key: thumbnailKey, url: thumbnailUrl } = uploadedThumbnail.data;
-      const { key: previewKey, url: previewUrl } = uploadedPreview.data;
+      const { key: thumbnailKey, ufsUrl: thumbnailUrl } = uploadedThumbnail.data;
+      const { key: previewKey, ufsUrl: previewUrl } = uploadedPreview.data;
 
       await db
         .update(videos).set({

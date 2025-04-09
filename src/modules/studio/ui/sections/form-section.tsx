@@ -73,6 +73,7 @@ const FormSectionSuspense = ({ videoId }: FormSectionProps) => {
       utils.studio.getMany.invalidate()
       utils.studio.getOne.invalidate({ id: videoId })
       toast.success("Video updated successfully")
+      router.push("/studio")
     },
     onError: () => {
       toast.error("Something went wrong")

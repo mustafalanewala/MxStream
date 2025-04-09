@@ -13,12 +13,12 @@ export const VideoTopRow = ({ video }: VideoTopRowProps) => {
   const compactView = useMemo(() => {
     return Intl.NumberFormat("en", {
       notation: "compact",
-    }).format(4553424)
+    }).format(video.viewCount)
   }, [])
   const expandedViews = useMemo(() => {
     return Intl.NumberFormat("en", {
       notation: "standard",
-    }).format(345657)
+    }).format(video.viewCount)
   }, [])
 
   const compactDate = useMemo(() => {
